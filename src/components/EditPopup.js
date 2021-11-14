@@ -42,7 +42,8 @@ class EditPopup extends Component {
     // });
     return (
       <div className="popup" id="edit-popup">
-        <div className={"popup-content"}>
+        <div className="popup-content">
+          <h1>Edit data</h1>
           <form>
             <label htmlFor="name">Name</label>
             <input

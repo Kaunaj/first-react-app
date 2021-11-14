@@ -58,11 +58,13 @@ class App extends Component {
     // console.log({ characters, openEditPopup, character, index });
     return (
       <div className="container">
+        <h1>Available data</h1>
         <Table
           characters={characters}
           handleEditPopup={this.handleEditPopup}
           removeCharacter={this.removeCharacter}
         />
+        <h1>Add new data</h1>
         <Form addCharacter={this.addCharacter} />
         {openEditPopup ? (
           <EditPopup

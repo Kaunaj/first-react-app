@@ -42,7 +42,7 @@ const TableBody = (props) => {
 class Table extends Component {
   render() {
     const { characters, handleEditPopup, removeCharacter } = this.props;
-    return (
+    return characters.length ? (
       <table>
         <TableHead />
         <TableBody
@@ -51,6 +51,8 @@ class Table extends Component {
           removeCharacter={removeCharacter}
         />
       </table>
+    ) : (
+      <p>No data to show</p>
     );
   }
 }
