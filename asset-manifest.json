@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/first-react-app/static/css/main.1a2d6134.chunk.css",
+    "main.js": "/first-react-app/static/js/main.b737d084.chunk.js",
+    "main.js.map": "/first-react-app/static/js/main.b737d084.chunk.js.map",
+    "runtime-main.js": "/first-react-app/static/js/runtime-main.1ee7b34c.js",
+    "runtime-main.js.map": "/first-react-app/static/js/runtime-main.1ee7b34c.js.map",
+    "static/js/2.4c369324.chunk.js": "/first-react-app/static/js/2.4c369324.chunk.js",
+    "static/js/2.4c369324.chunk.js.map": "/first-react-app/static/js/2.4c369324.chunk.js.map",
+    "index.html": "/first-react-app/index.html",
+    "static/css/main.1a2d6134.chunk.css.map": "/first-react-app/static/css/main.1a2d6134.chunk.css.map",
+    "static/js/2.4c369324.chunk.js.LICENSE.txt": "/first-react-app/static/js/2.4c369324.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1ee7b34c.js",
+    "static/js/2.4c369324.chunk.js",
+    "static/css/main.1a2d6134.chunk.css",
+    "static/js/main.b737d084.chunk.js"
+  ]
+}
