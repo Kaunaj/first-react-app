@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import axios from "axios";
 import Table from "./components/Table";
 import Form from "./components/Form";
 import EditPopup from "./components/EditPopup";
@@ -53,12 +54,22 @@ class App extends Component {
     });
   };
 
+  handleFetch = () => {
+    const requestBody = { title: "Axios POST Request Example" };
+    axios
+      .post("https://reqres.in/api/articles", requestBody)
+      .then((response) => console.log(response))
+      .catch((error) => {
+        console.error("There was an error!", error);
+      });
+  };
+
   render() {
     const { characters, openEditPopup, character, index } = this.state;
     // console.log({ characters, openEditPopup, character, index });
     return (
       <div className="container">
-        <h1>Available data</h1>
+        {/* <h1>Available data</h1>
         <Table
           characters={characters}
           handleEditPopup={this.handleEditPopup}
@@ -72,7 +83,9 @@ class App extends Component {
             handleEditPopup={this.handleEditPopup}
             index={index}
           />
-        ) : null}
+        ) : null} */}
+        <h1>Fetch data with Axios</h1>
+        <button onClick={this.handleFetch}>Fetch</button>
       </div>
     );
   }
